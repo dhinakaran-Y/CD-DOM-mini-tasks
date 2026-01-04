@@ -1,0 +1,96 @@
+[
+  { "id": 101, "productName": "Wheat Flour", "quantity": "1kg", "price": 55 },
+  { "id": 102, "productName": "Wheat Flour", "quantity": "2kg", "price": 109 },
+  { "id": 103, "productName": "Wheat Flour", "quantity": "5kg", "price": 249 },
+  { "id": 104, "productName": "Wheat Flour", "quantity": "10kg", "price": 485 },
+  { "id": 105, "productName": "Rice", "quantity": "1kg", "price": 62 },
+  { "id": 106, "productName": "Rice", "quantity": "5kg", "price": 299 },
+  { "id": 107, "productName": "Rice", "quantity": "10kg", "price": 579 },
+  { "id": 108, "productName": "Sugar", "quantity": "1kg", "price": 48 },
+  { "id": 109, "productName": "Sugar", "quantity": "5kg", "price": 235 },
+  { "id": 110, "productName": "Salt", "quantity": "1kg", "price": 22 },
+
+  { "id": 111, "productName": "Salt", "quantity": "5kg", "price": 105 },
+  { "id": 112, "productName": "Cooking Oil", "quantity": "1L", "price": 165 },
+  { "id": 113, "productName": "Cooking Oil", "quantity": "5L", "price": 799 },
+  { "id": 114, "productName": "Toor Dal", "quantity": "1kg", "price": 178 },
+  { "id": 115, "productName": "Toor Dal", "quantity": "5kg", "price": 865 },
+  { "id": 116, "productName": "Chana Dal", "quantity": "1kg", "price": 92 },
+  { "id": 117, "productName": "Chana Dal", "quantity": "5kg", "price": 449 },
+  { "id": 118, "productName": "Moong Dal", "quantity": "1kg", "price": 118 },
+  { "id": 119, "productName": "Moong Dal", "quantity": "5kg", "price": 575 },
+  { "id": 120, "productName": "Urad Dal", "quantity": "1kg", "price": 132 },
+
+  { "id": 121, "productName": "Urad Dal", "quantity": "5kg", "price": 645 },
+  { "id": 122, "productName": "Rava", "quantity": "1kg", "price": 58 },
+  { "id": 123, "productName": "Rava", "quantity": "5kg", "price": 279 },
+  { "id": 124, "productName": "Maida", "quantity": "1kg", "price": 52 },
+  { "id": 125, "productName": "Maida", "quantity": "5kg", "price": 249 },
+  { "id": 126, "productName": "Besan", "quantity": "1kg", "price": 98 },
+  { "id": 127, "productName": "Besan", "quantity": "5kg", "price": 479 },
+  { "id": 128, "productName": "Tea Powder", "quantity": "500g", "price": 145 },
+  {
+    "id": 129,
+    "productName": "Coffee Powder",
+    "quantity": "500g",
+    "price": 189
+  },
+  { "id": 130, "productName": "Milk Powder", "quantity": "1kg", "price": 425 },
+
+  { "id": 131, "productName": "Oats", "quantity": "1kg", "price": 168 },
+  { "id": 132, "productName": "Corn Flakes", "quantity": "500g", "price": 135 },
+  { "id": 133, "productName": "Bread", "quantity": "1 pack", "price": 45 },
+  { "id": 134, "productName": "Butter", "quantity": "500g", "price": 255 },
+  { "id": 135, "productName": "Ghee", "quantity": "1L", "price": 615 },
+  { "id": 136, "productName": "Eggs", "quantity": "12 pcs", "price": 78 },
+  { "id": 137, "productName": "Noodles", "quantity": "1 pack", "price": 22 },
+  { "id": 138, "productName": "Pasta", "quantity": "500g", "price": 89 },
+  {
+    "id": 139,
+    "productName": "Tomato Sauce",
+    "quantity": "500g",
+    "price": 115
+  },
+  {
+    "id": 140,
+    "productName": "Chilli Powder",
+    "quantity": "250g",
+    "price": 98
+  },
+
+  {
+    "id": 141,
+    "productName": "Turmeric Powder",
+    "quantity": "250g",
+    "price": 72
+  },
+  {
+    "id": 142,
+    "productName": "Coriander Powder",
+    "quantity": "250g",
+    "price": 85
+  },
+  {
+    "id": 143,
+    "productName": "Pepper Powder",
+    "quantity": "100g",
+    "price": 112
+  },
+  { "id": 144, "productName": "Jeera", "quantity": "100g", "price": 64 },
+  {
+    "id": 145,
+    "productName": "Mustard Seeds",
+    "quantity": "100g",
+    "price": 42
+  },
+  { "id": 146, "productName": "Cardamom", "quantity": "50g", "price": 185 },
+  { "id": 147, "productName": "Cloves", "quantity": "50g", "price": 132 },
+  { "id": 148, "productName": "Bay Leaf", "quantity": "20g", "price": 38 },
+  { "id": 149, "productName": "Cinnamon", "quantity": "50g", "price": 98 },
+  {
+    "id": 150,
+    "productName": "Dry Red Chilli",
+    "quantity": "250g",
+    "price": 165
+  }
+]
