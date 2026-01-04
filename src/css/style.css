@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.card {
+    @apply flex justify-between rounded bg-gray-100 px-2 py-1 shadow items-center *:items-center *:last:m-1.5;
+}
+
+.card-content{
+    @apply flex w-[50%] justify-between *:capitalize *:first:font-semibold;
+}
+
+.cancel-btn{
+    @apply p-1 border-2 border-transparent hover:border-black/60 rounded hover:cursor-pointer;
+}

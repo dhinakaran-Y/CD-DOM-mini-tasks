@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee-info</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="bg-gray-200">
+    <main class="w-lg bg-white rounded shadow-2xl mx-auto min-h-30 my-10 p-5 space-y-2">
+        <h2 class="font-bold my-3 text-center text-2xl">Dynamic User Manager</h2>
+        <form action="" id="user-form" class="space-y-2 justify-self-center">
+            <div class="">
+                <label for="user-name">Name:</label><br>
+                <input type="text" placeholder="Enter your name"
+                    class="bg-gray-200 border border-gray-400 rounded focus:outline-none px-2 w-md" id="user-name">
+                <p class="error-el text-xs text-red-500 hidden">Name contains invalid characters...</p>
+            </div>
+            <div class="">
+                <label for="job-title">Job role:</label><br>
+                <!-- <input type="text" placeholder="Job title" class="bg-gray-200 border border-gray-400 rounded focus:outline-none px-2" id="job-title"> -->
+                <select name="job-role" id="job-role"
+                    class="bg-gray-200 border border-gray-400 rounded focus:outline-none px-2 text-gray-600 w-md">
+                    <option value="Developer">Developer</option>
+                    <option value="Designer">Designer</option>
+                    <option value="QA & Test Engineer">QA & Test Engineer</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Security Engineer">Security Engineer</option>
+                    <option value="Sales Engineer">Sales Engineer</option>
+                </select>
+            </div>
+            <button id="add-user-btn"
+                class="px-3 py-1 bg-green-400 text-white font-semibold rounded hover:cursor-pointer hover:bg-green-500 mt-1">Add
+                User</button>
+        </form>
+    </main>
+    
+    <div class="w-3xl bg-white rounded shadow-2xl mx-auto min-h-30 my-10 p-5">
+        <div class="">
+            <ul class="space-y-3" id="info-list">
+                <!-- heading -->
+                <li class="flex justify-between px-2 font-bold items-center *:items-center">
+                    <div class="flex w-[50%] justify-between">
+                        <h2>Name</h2>
+                        <p>Job-title</p>
+                    </div>
+                    <div class="">
+                        <p>Remove</p>
+                    </div>
+                </li>
+                <!-- content -->
+                <!-- <li class="card">
+                        <div class="card-content">
+                        <h2>dhinakaran</h2>
+                        <p>Developer</p>
+                        </div>
+                        <div class="">
+                            <span class="cancel-btn">x</span>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-content">
+                            <h2 class="font-semibold">sam</h2>
+                            <p>Designer</p>
+                        </div>
+                        <div class="">
+                            <span class="cancel-btn">x</span>
+                        </div>
+                    </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- js -->
+    <script type="module" src="/src/js/employee-info.js"></script>
+</body>
+
+</html>
