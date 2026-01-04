@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping-calculator | Dhinakaran-Y</title>
+    <link rel="stylesheet" href="./src/css/shopping-calculator.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="bg-linear-to-r from-violet-400 to-purple-300 bg-no-repeat h-screen">
+    <header class="w-full bg-blue-300 h-10 content-center shadow shadow-black/20">
+        <nav class="w-[90vw] mx-auto flex justify-between">
+            <!-- left -->
+            <div class="font-semibold text-xl">DOM Tasks</div>
+            <!-- right -->
+            <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-blue-400" id="nav-list">
+                <a href="./index.html">Home</a>
+                <a href="#" class="actived">Task-1</a>
+                <a href="./shopping-list.html">Task-2</a>
+                <a href="./employee-info.html">Task-3</a>
+            </div>
+        </nav>
+    </header>
+    <main class="p-10">
+        <!-- form -->
+        <div class="bg-white p-5 rounded max-w-xl mx-auto shadow-xl shadow-black/30">
+            <h4 class="font-semibold text-xl">Enter Your Products</h4>
+
+            <form action="" id="my-form" class="space-y-3 mt-3">
+                <!-- name -->
+                <input type="text" name="" id="product-name" placeholder="Product Name" class="input">
+                <p class="error-el text-xs text-red-500 hidden">Name contains invalid characters...</p>
+                <!-- price -->
+                <input type="number" name="" id="product-price" placeholder="₹ Price" class="input">
+                <p class="error-el text-xs text-red-500 hidden">invalid...</p>
+                <!-- count -->
+                <input type="number" name="" id="product-count" placeholder="Quantity" class="input">
+                <p class="error-el text-xs text-red-500 hidden">invalid...</p>
+                <div class="space-x-1">
+                    <button type="submit" class="btn-1">Add to cart</button>
+                    <button type="button" class="btn-1 bg-red-500! hover:bg-red-400! active:bg-red-700!"
+                        id="clear-btn">clear</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Added books section -->
+        <section class="bg-white p-5 rounded max-w-xl mx-auto mt-5 shadow-xl shadow-black/30" id="cart-section">
+            <h4 class="font-semibold text-xl">Your Cart</h4>
+            <!-- <span class="text-gray-600 text-sm justify-center flex">No items in cart...</span> -->
+
+            <table class="mt-3 w-full text-gray-600 **:py-1 border-collapse">
+                <thead>
+                    <tr>
+                        <th>Products</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <!-- <th>Action</th> -->
+                    </tr>
+                </thead>
+                <tbody class="text-center border-t border-t-gray-300 *:border-b *:border-b-gray-300" id="cart-list">
+                </tbody>
+            </table>
+            <!-- total-div -->
+            <div class="flex justify-end space-x-5 px-3 pt-3 *:font-semibold **:text-center">
+                <!-- items -->
+                <div class="shadow shadow-violet-200 px-2 py-1">
+                    Total products
+                    <p id="total-products">20</p>
+                </div>
+                <!-- items -->
+                <div class="shadow shadow-violet-200 px-2 py-1">
+                    Total items
+                    <p id="total-items">20</p>
+                </div>
+                <!-- rate -->
+                <div class="shadow shadow-violet-200 px-2 py-1">
+                    Total cost
+                    <p id="total-cost">20</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- js -->
+    <script>
+        const formEL = document.getElementById("my-form")
+        const productNameEl = document.getElementById("product-name")
+        const productPriceEl = document.getElementById("product-price")
+        const productCountEl = document.getElementById("product-count")
+        const cartSectionEl = document.getElementById("cart-section")
+        const tbodyEL = document.getElementById("cart-list")
+        const clearBtn = document.getElementById("clear-btn")
+
+        clearBtn.addEventListener('click', () => clearFn())
+
+        cartSectionVisibleFn()
+
+        formEL.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const productName = productNameEl.value.trim();
+            const productPrice = productPriceEl.value.trim();
+            const productCount = productCountEl.value.trim();
+
+            // validation
+            const regex = /^[\p{L}\s.'-]{2,50}$/u;
+            if (!regex.test(productName) || (productName.length < 3 || productName.length > 25)) {
+                productNameEl.nextElementSibling.classList.remove("hidden");
+                productNameEl.nextElementSibling.innerText = "Name contains invalid characters..."
+                if (productName.length < 3 || productName.length > 25) {
+                    productNameEl.nextElementSibling.innerText = "character length must be above 2..."
+                }
+                return;
+            } else {
+                productNameEl.nextElementSibling.classList.add("hidden");
+            }
+            // price
+            if (productPrice < 1 || productPrice > 10000000) {
+                productPriceEl.nextElementSibling.classList.remove("hidden");
+                return;
+            } else {
+                productPriceEl.nextElementSibling.classList.add("hidden");
+            }
+            // count
+            if (productCount < 1 || productCount > 1000) {
+                productCountEl.nextElementSibling.classList.remove("hidden");
+                return;
+            } else {
+                productCountEl.nextElementSibling.classList.add("hidden");
+            }
+
+            //cc
+            const cartList = `<tr class="productInfo">
+            <td class="p-name">${productName}</td>
+            <td>₹ <span class="p-price">${productPrice}</span></td>
+            <td class="p-count">${productCount}</td>
+            <td class="p-total">${productPrice * productCount}<td>
+            <td>
+              <div class="">
+                <button class="check-btn" onclick="crossLineFn(event)">checked</button>
+                <button class="delete-btn" onclick="deleteFn(event)">delete</button>
+              </div>
+            </td>
+          </tr>`;
+
+            tbodyEL.innerHTML += cartList;
+
+            // total items calculation
+            totalItemsCalculation()
+
+            //total cost calculation
+            totalCostCalculation()
+
+            cartSectionVisibleFn()
+
+        })
+
+        function clearFn() {
+            productNameEl.value = "";
+            productPriceEl.value = "";
+            productCountEl.value = "";
+            console.log("hii");
+
+        }
+
+        function crossLineFn(event) {
+            let rowEl = event.target.closest("tr");
+            let checkBtn = rowEl.querySelector(".check-btn");
+
+            //   toggle Fn
+            console.log(checkBtn);
+            rowEl.classList.toggle("*:not-last:line-through");
+            checkBtn.classList.toggle("checked");
+            //   console.log(checkBtn.classList.contains("checked"));
+            if (checkBtn.classList.contains("checked")) {
+                checkBtn.innerText = "uncheck"
+            } else {
+                checkBtn.innerText = "checked";
+            }
+        }
+
+        function deleteFn(e) {
+            let rowEl = event.target.closest("tr");
+            rowEl.remove()
+
+            // total items calculation
+            totalItemsCalculation();
+
+            //total cost calculation
+            totalCostCalculation();
+
+            cartSectionVisibleFn()
+        }
+
+
+        // total items calculation
+        function totalItemsCalculation() {
+            let countEL = document.getElementsByClassName("p-count");
+            let countList = [...countEL];
+
+            let totalItems = countList.reduce((accumulator, current) => {
+                let cur = Number(current.innerText);
+                return accumulator + cur;
+            }, 0);
+
+            let totalProducts = tbodyEL.childElementCount;
+
+            document.getElementById("total-items").innerText = totalItems;
+            document.getElementById("total-products").innerText = totalProducts;
+        }
+
+        // total cost calculation Fn
+        function totalCostCalculation() {
+            let priceEL = document.getElementsByClassName("p-total");
+            let priceList = [...priceEL];
+
+            let totalCost = priceList.reduce((accumulator, current) => {
+                let cur = Number(current.innerText);
+                return accumulator + cur;
+            }, 0);
+
+            document.getElementById("total-cost").innerText = totalCost;
+        }
+
+        // cart section visible Fn
+        function cartSectionVisibleFn() {
+            if (tbodyEL.childElementCount < 1) {
+                cartSectionEl.classList.add("hidden");
+            } else {
+                cartSectionEl.classList.remove("hidden");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

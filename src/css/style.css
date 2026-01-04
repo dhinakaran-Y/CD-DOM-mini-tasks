@@ -11,3 +11,7 @@
 .cancel-btn{
     @apply p-1 border-2 border-transparent hover:border-black/60 rounded hover:cursor-pointer;
 }
+
+.actived {
+    @apply border-b-2
+}

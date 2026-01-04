@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {
-      input: ["index.html", "employee-info.html"],
+      input: ["index.html", "employee-info.html" , "shopping-calculator.html", "shopping-list.html"],
     },
   },
 });
