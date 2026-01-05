@@ -1,12 +1,12 @@
-function navLinksFn() {
-    const navLinks = document.querySelectorAll("#nav-list > a");
-    console.log(navLinks);
-    
-    navLinks.forEach(link => {
-        link.addEventListener("click",() => {
-            navLinks.forEach(link => link.classList.remove('actived'))
-            link.classList.add('actived')
-            console.log(link.classList); 
-        })
+const navLinks = document.querySelectorAll("#task-nav-list > a");
+// console.dir(navLinks);
+
+// old
+navLinks.forEach(navLink => {
+    navLink.addEventListener("click", (e)=> {
+        e.preventDefault()
+        navLinks.forEach(navLink => navLink.classList.remove("actived"))
+        console.log("hii")
+        e.target.classList.add("actived")
     })
-}
+});

@@ -17,7 +17,7 @@ function employeeDataManagingFn(e) {
 
   // console.log(nameValue , jobRoleValue);
   // validation name
-  const regex = /^[\p{L}\s.'-]{2,50}$/u;
+  const regex = /^[\p{L}\s.'-]{2,50}$/u; 
   if (!regex.test(nameValue) || nameValue.length < 3 || nameValue.length > 25) {
     nameInputEl.nextElementSibling.classList.remove("hidden");
     nameInputEl.nextElementSibling.innerText =
