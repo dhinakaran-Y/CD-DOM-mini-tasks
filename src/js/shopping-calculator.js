@@ -17,19 +17,9 @@ formEL.addEventListener("submit", (event) => {
   const productCount = productCountEl.value.trim();
 
   // validation
-  const regex = /^[\p{L}\s.'-]{2,50}$/u;
-  if (
-    !regex.test(productName) ||
-    productName.length < 3 ||
-    productName.length > 25
-  ) {
+  // name
+  if (productName.length < 3) {
     productNameEl.nextElementSibling.classList.remove("hidden");
-    productNameEl.nextElementSibling.innerText =
-      "Name contains invalid characters...";
-    if (productName.length < 3 || productName.length > 25) {
-      productNameEl.nextElementSibling.innerText =
-        "character length must be above 2...";
-    }
     return;
   } else {
     productNameEl.nextElementSibling.classList.add("hidden");
@@ -50,20 +40,52 @@ formEL.addEventListener("submit", (event) => {
   }
 
   //cc
-  const cartList = `<tr class="productInfo">
-            <td class="p-name">${productName}</td>
-            <td>₹ <span class="p-price">${productPrice}</span></td>
-            <td class="p-count">${productCount}</td>
-            <td class="p-total">${productPrice * productCount}<td>
-            <td>
-              <div class="">
-                <button class="check-btn" onclick="crossLineFn(event)">checked</button>
-                <button class="delete-btn" onclick="deleteFn(event)">delete</button>
-              </div>
-            </td>
-          </tr>`;
+  //   tr
+  const cartList = document.createElement("tr");
+  cartList.classList.add("productInfo");
+  //   td
+  // name
+  const pName = document.createElement("td");
+  pName.classList.add("p-name");
+  pName.innerText = productName;
+  cartList.append(pName);
+  // price
+  const pPrice = document.createElement("td");
+  pPrice.classList.add("p-price");
+  pPrice.textContent = productPrice;
+  cartList.append(pPrice);
+  // count
+  const pCount = document.createElement("td");
+  pCount.classList.add("p-count");
+  pCount.textContent = productCount;
+  cartList.append(pCount);
+  // total
+  const pTotal = document.createElement("td");
+  pTotal.classList.add("p-total");
+  pTotal.textContent = productPrice * productCount;
+  cartList.append(pTotal);
+  // action
+  const tdAction = document.createElement("td");
+  cartList.append(tdAction);
+  const actionDiv = document.createElement("div");
+  tdAction.append(actionDiv);
+  // check
+  const checkBtn = document.createElement("button");
+  checkBtn.classList.add("check-btn");
+  // checkBtn.setAttribute("onclick",'crossLineFn(event)')
+  // in vite build the set attribute's function-crossLineFn is searched in the window object. But, u created function "crossLineFn" is not attached to window object.
+  checkBtn.addEventListener("click", crossLineFn);
+  checkBtn.textContent = `checked`;
+  actionDiv.append(checkBtn);
+  //del
+  const delBtn = document.createElement("button");
+  delBtn.classList.add("delete-btn");
+  //   delBtn.setAttribute("onclick", "deleteFn");
+  delBtn.addEventListener("click", deleteFn);
+  delBtn.textContent = `delete`;
+  actionDiv.append(delBtn);
 
-  tbodyEL.innerHTML += cartList;
+  tbodyEL.append(cartList);
 
   // total items calculation
   totalItemsCalculation();
@@ -78,15 +100,17 @@ function clearFn() {
   productNameEl.value = "";
   productPriceEl.value = "";
   productCountEl.value = "";
-  console.log("hii");
+  //   console.log("hii");
 }
 
 function crossLineFn(event) {
+  console.log("checked");
+
   let rowEl = event.target.closest("tr");
   let checkBtn = rowEl.querySelector(".check-btn");
 
   //   toggle Fn
-  console.log(checkBtn);
+  //   console.log(checkBtn);
   rowEl.classList.toggle("*:not-last:line-through");
   checkBtn.classList.toggle("checked");
   //   console.log(checkBtn.classList.contains("checked"));
@@ -97,7 +121,7 @@ function crossLineFn(event) {
   }
 }
 
-function deleteFn(e) {
+function deleteFn(event) {
   let rowEl = event.target.closest("tr");
   rowEl.remove();
 
@@ -112,6 +136,9 @@ function deleteFn(e) {
 
 // total items calculation
 function totalItemsCalculation() {
+  const totalProductsEL = document.getElementById("total-products");
+  totalProductsEL.innerText = tbodyEL.childElementCount;
+
   let countEL = document.getElementsByClassName("p-count");
   let countList = [...countEL];
 
@@ -120,10 +147,7 @@ function totalItemsCalculation() {
     return accumulator + cur;
   }, 0);
 
-  let totalProducts = tbodyEL.childElementCount;
-
   document.getElementById("total-items").innerText = totalItems;
-  document.getElementById("total-products").innerText = totalProducts;
 }
 
 // total cost calculation Fn
