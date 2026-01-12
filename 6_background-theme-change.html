@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background-color-change</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="bg-green-50">
+    <header class="w-full bg-white/30 backdrop-blur-md h-10 content-center shadow shadow-black/20">
+        <nav class="w-[90vw] mx-auto flex justify-between">
+            <!-- left -->
+            <div class="font-semibold text-xl">Background Color Change</div>
+            <!-- right -->
+            <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-blue-400" id="nav-list">
+                <a href="./index.html">back to home</a>
+            </div>
+        </nav>
+    </header>
+    <main class="w-lg bg-white/30 backdrop-blur-md rounded shadow-2xl mx-auto min-h-30 mt-40 p-5 space-y-2">
+        <section id="input-section" class="space-y-2 justify-self-center">
+            <h2 class="font-bold my-3 text-center text-2xl">Choose Your Color</h2>
+            <div class="">
+                <!-- <label for="user-name">Name:</label><br> -->
+                <button class="btn bg-green-50 hover:bg-green-100 mt-1 text-black!" value="green-50">Light</button>
+                <button class="btn bg-black hover:bg-black/80 mt-1" value="black">Dark</button>
+                <button class="btn bg-brand hover:bg-brand/80 mt-1" value="brand">Green</button>
+                <button class="btn bg-yellow-300 hover:bg-yellow-300/80 mt-1" value="yellow-300">Yellow</button>
+                <button class="btn bg-red-400 hover:bg-red-300/80 mt-1" value="red-400">Red</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- js -->
+    <!-- <script type="module" src="./src/js/navLink.js"></script> -->
+    <script type="module" src="/src/js/6-background-color-change.js"></script>
+</body>
+
+</html>

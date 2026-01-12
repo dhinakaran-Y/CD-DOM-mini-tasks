@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme{
+    --color-brand: #2fbf98 ;
+    --color-brand-hover: #05b082;
+}
+
 .card {
     @apply flex justify-between rounded bg-gray-100 px-2 py-1 shadow items-center *:items-center *:last:m-1.5;
 }
@@ -14,4 +19,8 @@
 
 .actived {
     @apply border-b-2
+}
+
+.btn{
+    @apply px-3 py-1 text-white font-semibold rounded hover:cursor-pointer shadow shadow-black/20
 }

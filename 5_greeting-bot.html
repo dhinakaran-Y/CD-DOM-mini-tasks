@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting-bot</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="bg-gray-200 bg-[url(/public/images/3.jpg)] bg-fixed bg-no-repeat bg-center bg-cover">
+    <header class="w-full bg-white/50 backdrop-blur-md h-10 content-center shadow shadow-black/20">
+        <nav class="w-[90vw] mx-auto flex justify-between">
+            <!-- left -->
+            <div class="font-semibold text-xl">Greeting-bot</div>
+            <!-- right -->
+            <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-blue-400" id="nav-list">
+                <a href="./index.html">back to home</a>
+            </div>
+        </nav>
+    </header>
+    <main class="w-lg bg-white/30 backdrop-blur-md rounded shadow-2xl mx-auto min-h-30 mt-40 p-5 space-y-2">
+        <form action="" id="user-form" class="space-y-2 justify-self-center">
+            <h2 class="font-bold my-3 text-center text-2xl">Greeting Bot</h2>
+            <div class="">
+                <label for="user-name">Name:</label><br>
+                <input type="text" placeholder="Enter your name"
+                    class="bg-gray-200 border border-gray-400 rounded focus:outline-none px-2 w-md" id="user-name">
+                <p class="error-el text-xs text-red-500 hidden">Name contains invalid characters...</p>
+            </div>
+            <button id="add-user-btn"
+                class="px-3 py-1 bg-[#2fbf98] text-white font-semibold rounded hover:cursor-pointer hover:bg-[#05b082] mt-1">Greet
+                User</button>
+        </form>
+    </main>
+
+    <div class="w-3xl bg-white/30 backdrop-blur-md rounded mx-auto min-h-30 mt-40 p-5 hidden">
+        <div class="w-full flex flex-col justify-items-center" id="greet-div">
+            <h2 class="text-3xl font-semibold text-center" id="greet-el">bjnj</h2><br>
+            <button class="text-white font-semibold bg-red-400 px-3 py-1 rounded mx-auto hover:cursor-pointer hover:bg-red-500" id="greet-another">Greet another User</button>
+        </div>
+    </div>
+
+    <!-- js -->
+    <!-- <script type="module" src="./src/js/navLink.js"></script> -->
+    <script type="module" src="/src/js/greeting-bot.js"></script>
+</body>
+
+</html>
