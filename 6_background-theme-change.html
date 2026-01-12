@@ -13,10 +13,13 @@
     <header class="w-full bg-white/30 backdrop-blur-md h-10 content-center shadow shadow-black/20">
         <nav class="w-[90vw] mx-auto flex justify-between">
             <!-- left -->
-            <div class="font-semibold text-xl">Background Color Change</div>
+            <div class="font-semibold text-xl">Background color change</div>
             <!-- right -->
-            <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-blue-400" id="nav-list">
-                <a href="./index.html">back to home</a>
+            <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-brand" id="nav-list">
+                <a href="./index.html" class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="15" height="15" viewBox="0 0 24 24" class="mr-1">
+                        <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+                    </svg>back to home</a>
             </div>
         </nav>
     </header>
@@ -30,13 +33,14 @@
                 <button class="btn bg-brand hover:bg-brand/80 mt-1" value="brand">Green</button>
                 <button class="btn bg-yellow-300 hover:bg-yellow-300/80 mt-1" value="yellow-300">Yellow</button>
                 <button class="btn bg-red-400 hover:bg-red-300/80 mt-1" value="red-400">Red</button>
+                <button class="btn bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700 mt-1" value="random-color" id="random-color-btn">random</button>
             </div>
         </section>
     </main>
 
     <!-- js -->
     <!-- <script type="module" src="./src/js/navLink.js"></script> -->
-    <script type="module" src="/src/js/6-background-color-change.js"></script>
+    <script type="module" src="/src/js/6_background-color-change.js"></script>
 </body>
 
 </html>
