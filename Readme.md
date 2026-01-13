@@ -1,6 +1,8 @@
 # JS DOM Mini Tasks:
  A repository for learn and done mini tasks & projects of how to maniplate javascript DOM.
 
+ **live 🔗 :** [https://dhinakaran-y-js.netlify.app/](https://dhinakaran-y-js.netlify.app/)
+
  ## Tasks:
  ### Task 1: A simple Shopping list calculator
     
@@ -27,10 +29,24 @@ Logic:
 
 ---
 
-   ### Task 4: The "Active State" Navigator
+ ### Task 4: The "Active State" Navigator
     
 Logic:
 - UI: A Navigation Bar with 5 links (Home, About, etc.).
 - Loop through them using forEach to attach a click event.
 - Interaction: When a link is clicked, add an .active class (change color/style) to the clicked link and remove it from all others.
+---
+
+ ### Task 5: The "Greeting" Bot
+    
+Logic:
+ - Task detail: Create an input field for a name and a "Greet" button. When clicked, display "Hello [Name], Welcome to CyberDude!" in an h2 tag.
+---
+
+ ### Task 6: Background Color Switcher
+    
+Logic:
+- A background color changing function using javascript DOM.
+- The task have min 5 buttons in different colors, Onclick does the background color changing function.
+- And also have a random color change button to change the background color randomly. 
 ---
