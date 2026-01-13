@@ -28,3 +28,11 @@
 .day-span{
     @apply bg-brand/80 px-2 py-0.5 text-sm font-semibold rounded-lg
 }
+
+.day-title{
+    @apply font-semibold flex *:mr-2 items-center
+}
+
+.inner-task-li{
+   @apply flex flex-col px-3 *:border-b *:last:border-none *:border-brand/30 *:py-1 *:hover:text-emerald-700 *:hover:*:*:first:text-white
+}
