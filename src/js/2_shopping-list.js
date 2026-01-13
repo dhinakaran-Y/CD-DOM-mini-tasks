@@ -28,3 +28,10 @@ function addProducts(data) {
 }
 
 addProducts();
+
+// back navigation
+window.addEventListener("keyup", (event) => {
+  if (event.code === "Backspace") {
+    window.location = './index.html'
+  }
+})

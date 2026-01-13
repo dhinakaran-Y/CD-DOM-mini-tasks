@@ -49,3 +49,10 @@ function textColorChangeFn() {
     document.body.classList.remove(`text-white`);
   }
 }
+
+// back navigation
+window.addEventListener("keyup", (event) => {
+  if (event.code === "Backspace") {
+    window.location = './index.html'
+  }
+})

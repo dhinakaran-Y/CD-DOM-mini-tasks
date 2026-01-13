@@ -10,3 +10,10 @@ navLinks.forEach(navLink => {
         e.target.classList.add("actived")
     })
 });
+
+// back navigation
+window.addEventListener("keyup", (event) => {
+  if (event.code === "Backspace") {
+    window.location = './index.html'
+  }
+})

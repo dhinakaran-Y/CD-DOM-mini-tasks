@@ -119,3 +119,10 @@ function EmployeeListVisibleFn() {
     infoListEL.parentElement.parentElement.classList.remove("hidden");
   }
 }
+
+// back navigation
+window.addEventListener("keyup", (event) => {
+  if (event.code === "Backspace") {
+    window.location = './index.html'
+  }
+})
