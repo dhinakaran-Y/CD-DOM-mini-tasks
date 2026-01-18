@@ -31,7 +31,9 @@ addProducts();
 
 // back navigation
 window.addEventListener("keyup", (event) => {
-  if (event.code === "Backspace") {
-    window.location = './index.html'
+  if (event.target.tagName !== "INPUT") {
+    if(event.code === "Backspace") {
+      window.location = "./index.html";
+    }
   }
 })
