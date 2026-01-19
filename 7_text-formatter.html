@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-<body class="bg-gray-200 bg-[url(/public/images/3.jpg)] bg-fixed bg-no-repeat bg-center bg-cover">
-    <header class="w-full bg-white/50 backdrop-blur-md h-10 content-center shadow shadow-black/20">
+<body class="bg-gray-200 text-white bg-[url(/public/images/bg-6.png)] bg-fixed bg-no-repeat bg-center bg-cover">
+    <header class="w-full bg-white/10 backdrop-blur-xl h-10 content-center shadow shadow-black/20">
         <nav class="w-[90vw] mx-auto flex justify-between">
             <!-- left -->
             <div class="font-semibold text-xl">Text Formatter</div>
@@ -23,21 +23,21 @@
             </div>
         </nav>
     </header>
-    <main class="w-lg bg-white/30 backdrop-blur-md rounded shadow-2xl mx-auto min-h-30 mt-10 p-5 space-y-2">
+    <main class="w-xl bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg mx-auto min-h-30 mt-10 p-5 space-y-2">
         <form action="" id="user-form" class="space-y-2 justify-self-center">
             <h2 class="font-bold my-3 text-center text-2xl">Text-Formatter</h2>
             <div class="">
                 <label for="text-content">Text-area : </label><br>
-                <textarea class="border text-black border-gray-400 rounded focus:outline-none px-2 resize-none" name="text-content" id="text-content" cols="50" rows="5" placeholder="Enter your content briefly"></textarea>
+                <textarea class="border border-white/30 placeholder:text-white/50 text-white/60 rounded focus:outline-none px-2 resize-none" name="text-content" id="text-content" cols="50" rows="5" placeholder="Enter your content briefly"></textarea>
             </div>
             <button type="button" class="btn bg-red-400" id="clear-btn">clear</button>
         </form>
     </main>
 
-    <div class="w-3xl bg-white/30 backdrop-blur-md rounded shadow-2xl mx-auto min-h-30 my-10 p-5 space-y-4">
+    <div class="w-3xl bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg mx-auto min-h-30 my-10 p-5 space-y-4">
         <div class="justify-self-center">
             <h2 class="text-2xl font-black text-center mb-2">Your Text Content</h2>
-            <p class="w-md border rounded h-40 p-5" id="output">
+            <p class="w-md border border-white/30 rounded h-40 p-5" id="output">
                 ✍️write your content in the text area...
             </p>
         </div>

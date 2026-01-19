@@ -32,8 +32,9 @@ function changeToBold() {
 }
 
 function inputClearFn() {
-    textAreaEl.value = ""
-    outputDivEl.textContent = ""
+    textAreaEl.value = "";
+    outputDivEl.textContent = "";
+    outputDivVisibleFn();
 }
 
 function outputDivVisibleFn() {
