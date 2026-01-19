@@ -14,7 +14,9 @@ export default defineConfig({
         "5_greeting-bot.html",
         "6_background-theme-change.html",
         "7_text-formatter.html",
-        "8_show-hide-password.html"
+        "8_show-hide-password.html",
+        "9_habit-tracker.html",
+        "10_cart-manager.html"
       ],
     },
   },
