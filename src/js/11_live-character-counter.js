@@ -33,9 +33,9 @@ function textClearFn() {
 
 // back navigation
 window.addEventListener("keyup", (event) => {
-  if (event.target.tagName !== "INPUT") {
+  if (event.target.tagName !== "INPUT" && event.target.tagName !== "TEXTAREA") {
     if (event.code === "Backspace") {
       window.location = "./index.html";
     }
   }
-});
+})
