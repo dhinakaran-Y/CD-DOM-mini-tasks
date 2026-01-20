@@ -118,8 +118,8 @@ function doneHabitsCount() {
 
 function scoreFN() {
   let totalHabits = tbodyEL.childElementCount;
-  let score = (doneHabits / totalHabits) * 100;
-  // console.log(score);
+  let score = Number.isNaN((doneHabits / totalHabits) * 100) ?  0 : (doneHabits / totalHabits) * 100 ;
+  
   document.getElementById("score").textContent = score.toFixed(1) + "%";
 }
 
