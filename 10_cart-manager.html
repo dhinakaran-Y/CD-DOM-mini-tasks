@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping-calculator | Dhinakaran-Y</title>
+    <link rel="stylesheet" href="./src/css/shopping-cart.css">
+</head>
+
+<body>
+    <main class="grid grid-cols-12 w-screen">
+        <div class="col-span-2"></div>
+        <section class="col-span-8 mt-10">
+            <h2 class="flex text-4xl justify-center font-semibold content-center">
+                <span class="mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M6.15 6l2.4 5h7l2.75-5zM5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H1V2h3.25zm3.35 7h7z" />
+                    </svg>
+                </span> My Cart
+            </h2>
+            <!-- cart items -->
+             <section class="my-10">
+                <!-- card-1 -->
+                 <div class="card">
+                    <!-- left -->
+                     <div class="flex">
+                        <img src="./public/images/product-Items/1.jpg" class="product-img" alt="shirt-img">
+                        <div class="product-details">
+                            <h3 class="font-semibold text-xl">Blue Shirt with T-shirt</h3>
+                            <p class="text-gray-600"><span>₹</span><span class="product-rate">450</span></p>
+                        </div>
+                        </div>
+                        <!-- right -->
+                         <div class="flex space-x-15 items-center">
+                            <div class="flex space-x-3 items-center content-center">
+                                <span class="count-btn count-dec">-</span>
+                                <span class="count-num">1</span>
+                                <span class="count-btn count-inc">+</span>
+                            </div>
+                            <div class="">
+                                <p class="single-p-total text-green-500">₹ 450.00</p>
+                            </div>
+                         </div>
+                 </div>
+                <!-- card-2 -->
+                <div class="card">
+                    <!-- left -->
+                    <div class="flex">
+                        <img src="./public/images/product-Items/2.jpg" class="product-img" alt="shirt-img">
+                        <div class="product-details">
+                            <h3 class="font-semibold text-xl">Blue Shirt with T-shirt</h3>
+                            <p class="text-gray-600"><span>₹</span><span class="product-rate">1599</span></p>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="flex space-x-15 items-center">
+                        <div class="flex space-x-3 items-center content-center">
+                            <span class="count-btn count-dec">-</span>
+                            <span class="count-num">1</span>
+                            <span class="count-btn count-inc">+</span>
+                        </div>
+                        <div class="">
+                            <p class="single-p-total text-green-500">₹ 1599.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card">
+                    <!-- left -->
+                    <div class="flex">
+                        <img src="./public/images/product-Items/3.jpg" class="product-img" alt="shirt-img">
+                        <div class="product-details">
+                            <h3 class="font-semibold text-xl">Festina C12</h3>
+                            <p class="text-gray-600"><span>₹</span><span class="product-rate">12399</span></p>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="flex space-x-15 items-center">
+                        <div class="flex space-x-3 items-center content-center">
+                            <span class="count-btn count-dec">-</span>
+                            <span class="count-num">1</span>
+                            <span class="count-btn count-inc">+</span>
+                        </div>
+                        <div class="">
+                            <p class="single-p-total text-green-500">₹ 12399.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="card">
+                    <!-- left -->
+                    <div class="flex">
+                        <img src="./public/images/product-Items/4.jpg" class="product-img" alt="shirt-img">
+                        <div class="product-details">
+                            <h3 class="font-semibold text-xl">Headphone Sony C11A99Z</h3>
+                            <p class="text-gray-600"><span>₹</span><span class="product-rate">15099</span></p>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="flex space-x-15 items-center">
+                        <div class="flex space-x-3 items-center content-center">
+                            <span class="count-btn count-dec">-</span>
+                            <span class="count-num">1</span>
+                            <span class="count-btn count-inc">+</span>
+                        </div>
+                        <div class="">
+                            <p class="single-p-total text-green-500">₹ 15099.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div class="card">
+                    <!-- left -->
+                    <div class="flex">
+                        <img src="./public/images/product-Items/5.jpg" class="product-img" alt="shirt-img">
+                        <div class="product-details">
+                            <h3 class="font-semibold text-xl">Sneakers</h3>
+                            <p class="text-gray-600"><span>₹</span><span class="product-rate">600</span></p>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="flex space-x-15 items-center">
+                        <div class="flex space-x-3 items-center content-center">
+                            <span class="count-btn count-dec">-</span>
+                            <span class="count-num">1</span>
+                            <span class="count-btn count-inc">+</span>
+                        </div>
+                        <div class="">
+                            <p class="single-p-total text-green-500">₹ 600.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- total -->
+                <div class="flex justify-between items-center">
+                    <p class="text-2xl font-semibold">Total Amount</p>
+                    <p class="text-xl font-semibold" id="total-amount">₹ 12399.00</p>
+                </div>
+             </section>
+        </section>
+        <div class="col-span-2"></div>
+    </main>
+    <script type="module" src="./src/js/10_cart-manager.js"></script>
+</body>
+
+</html>

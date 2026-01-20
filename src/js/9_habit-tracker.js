@@ -62,6 +62,7 @@ formEL.addEventListener("submit", (event) => {
   totalItemsCalculation();
   doneHabitsCount()
   scoreFN();
+  clearFn();
   cartSectionVisibleFn();
 });
 
@@ -95,7 +96,7 @@ function deleteFn(event) {
   totalItemsCalculation();
 
   //total cost calculation
-  totalCostCalculation();
+  // totalCostCalculation();
 
   cartSectionVisibleFn();
 }
@@ -125,6 +126,8 @@ function scoreFN() {
 
 // cart section visible Fn
 function cartSectionVisibleFn() {
+  console.log(cartSectionEl);
+  
   if (tbodyEL.childElementCount < 1) {
     cartSectionEl.classList.add("hidden");
   } else {
