@@ -93,3 +93,12 @@ function totalAmountFn() {
 }
 
 totalAmountFn()
+
+// back navigation
+window.addEventListener("keyup", (event) => {
+  if (event.target.tagName !== "INPUT") {
+    if (event.code === "Backspace") {
+      window.location = "./index.html";
+    }
+  }
+});
