@@ -40,10 +40,14 @@ formEL.addEventListener("submit", (event) => {
   // check
   const checkBtn = document.createElement("button");
   checkBtn.classList.add("check-btn");
+  // [#4f7531]
+  checkBtn.classList.add("text-[#4f7531]!");
+  checkBtn.classList.add("hover:bg-[#4f7531]!");
+  checkBtn.classList.add("hover:text-white!");
   // checkBtn.setAttribute("onclick",'crossLineFn(event)')
   // in vite build the set attribute's function-crossLineFn is searched in the window object. But, u created function "crossLineFn" is not attached to window object.
   checkBtn.addEventListener("click", crossLineFn);
-  checkBtn.addEventListener("click", doneHabitsCount)
+  checkBtn.addEventListener("click", doneHabitsCount);
   checkBtn.addEventListener("click", scoreFN);
   checkBtn.textContent = `done`;
   actionDiv.append(checkBtn);
@@ -52,7 +56,7 @@ formEL.addEventListener("submit", (event) => {
   delBtn.classList.add("delete-btn");
   delBtn.addEventListener("click", deleteFn);
   delBtn.addEventListener("click", doneHabitsCount);
-  delBtn.addEventListener("click", scoreFN)
+  delBtn.addEventListener("click", scoreFN);
   delBtn.textContent = `delete`;
   actionDiv.append(delBtn);
 
@@ -60,7 +64,7 @@ formEL.addEventListener("submit", (event) => {
 
   // total items calculation
   totalItemsCalculation();
-  doneHabitsCount()
+  doneHabitsCount();
   scoreFN();
   clearFn();
   cartSectionVisibleFn();
@@ -126,7 +130,7 @@ function scoreFN() {
 
 // cart section visible Fn
 function cartSectionVisibleFn() {
-  console.log(cartSectionEl);
+  // console.log(cartSectionEl);
   
   if (tbodyEL.childElementCount < 1) {
     cartSectionEl.classList.add("hidden");

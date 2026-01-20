@@ -9,35 +9,35 @@
     <!-- <link rel="stylesheet" href="./src/css/style.css"> -->
 </head>
 
-<body class="bg-violet-200 bg-fixed bg-no-repeat bg-center bg-cover">
+<body class="bg-violet-200 bg-[url(/public/images/bg-8.png)] bg-fixed bg-no-repeat bg-center bg-cover">
     <header class="w-full py-3 content-center">
-        <nav class="mx-auto justify-self-center bg-violet-500 text-white py-2 px-4 shadow-lg shadow-black/30 rounded-full flex font-semibold text-2xl text-center font-sans">
+        <nav class="mx-auto justify-self-center bg-[#4f7531] text-white py-2 px-4 shadow-lg shadow-black/30 rounded-full flex font-semibold text-2xl text-center font-sans">
             Habit Tracker
         </nav>
     </header>
     <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-brand fixed top-2 right-2" id="nav-list">
-        <a href="./index.html" class="flex justify-center items-center hover:text-violet-500 space-x-2"><svg xmlns="http://www.w3.org/2000/svg"
+        <a href="./index.html" class="flex justify-center items-center hover:text-[#4f7531] space-x-2"><svg xmlns="http://www.w3.org/2000/svg"
                 width="15" height="15" viewBox="0 0 24 24" class="mr-1">
                 <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
             </svg>back to home</a>
     </div>
     <main class="mx-20 py-10 grid grid-cols-12">
 
-        <aside class="col-span-3 h-87 bg-violet-500 text-white rounded-2xl shadow-xl shadow-black/30">
+        <aside class="col-span-3 h-87 bg-[#4f7531] text-white rounded-2xl shadow-xl shadow-black/30">
             <!-- total-div -->
             <div class="justify-end px-3 pt-3 *:font-semibold **:text-center gap-3 grid grid-cols-6">
                 <!-- score -->
-                <div class="shadow shadow-violet-200 text-2xl px-2 py-8 col-span-6  rounded-2xl">
+                <div class="shadow shadow-green-200 text-2xl px-2 py-8 col-span-6  rounded-2xl">
                     Today You have <br> finished 
                     <p id="score">0%</p>
                 </div>
                 <!--  -->
-                <div class="shadow shadow-violet-200 text-xl px-2 py-8 col-span-3  rounded-2xl">
+                <div class="shadow shadow-green-200 text-xl px-2 py-8 col-span-3  rounded-2xl">
                     Total habits added
                     <p id="total-products">20</p>
                 </div>
                 <!-- items -->
-                <div class="shadow shadow-violet-200 text-xl px-2 py-8 col-span-3  rounded-2xl">
+                <div class="shadow shadow-green-200 text-xl px-2 py-8 col-span-3  rounded-2xl">
                     Total total habits done 
                     <p id="total-items">20</p>
                 </div>
@@ -54,10 +54,10 @@
             <form action="" id="my-form" class="space-y-3 mt-3">
                 <!-- name -->
                  <label for="habit-name" class="">Habit Name :</label>
-                <input type="text" name="habit-name" id="habit-name" placeholder="Enter your habit name" class="input">
+                <input type="text" name="habit-name" id="habit-name" placeholder="Enter your habit name" class="input border-[#4f7531]/60! focus:outline-[#4f7531]/80!">
                 <p class="error-el text-xs text-red-500 hidden">Name contains invalid characters...</p>
                 <div class="space-x-1">
-                    <button type="submit" class="btn-1">Add habit</button>
+                    <button type="submit" class="btn-1 bg-[#4f7531]!">Add habit</button>
                     <button type="button" class="btn-1 bg-red-500! hover:bg-red-400! active:bg-red-700!"
                         id="clear-btn">clear</button>
                 </div>
