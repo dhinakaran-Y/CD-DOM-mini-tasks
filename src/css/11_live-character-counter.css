@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.card{
+    @apply border border-white/60 shadow-lg rounded-2xl text-blue-100 px-5 py-4 bg-transparent flex-col flex justify-items-center items-center w-50 text-center space-y-2 *:last:text-white *:last:font-bold *:last:text-xl
+}
+
+.btn{
+    @apply px-3 py-1 text-white font-semibold rounded hover:cursor-pointer shadow shadow-black/20
+}

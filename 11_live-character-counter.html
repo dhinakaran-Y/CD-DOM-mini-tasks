@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping-calculator | Dhinakaran-Y</title>
+    <!-- <link rel="stylesheet" href="./src/css/shopping-cart.css"> -->
+    <link rel="stylesheet" href="./src/css/11_live-character-counter.css">
+</head>
+
+<body>
+    <!-- home navigation -->
+    <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-brand fixed top-2 right-2" id="nav-list">
+        <a href="./index.html" class="flex justify-center items-center space-x-2 hover:text-white"><svg
+                xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" class="mr-1">
+                <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+            </svg>back to home</a>
+    </div>
+    <!-- main -->
+    <main class="w-screen h-screen grid grid-cols-12">
+        <!-- left -->
+         <section class="col-span-9 grid-cols-12 grid">
+            <div class="col-span-1"></div>
+            <!-- main -->
+             <main class="col-span-10 mt-20">
+                 <h2 class="text-5xl font-bold text-blue-500 font-mono text-center">Live Characters Counter</h2>
+                 <p class="text-gray-700 mt-2 text-center">This site helps to count the characters in your content fast and easily.</p>
+                 <!-- textarea   bg-[url(/public/images/text-board.png)] bg-fill bg-center relative h-140 w-full -->
+                 <!-- <div class="relative *:justify-self-center w-full">
+                    <img src="./public/images/text-board.png" alt="wooden-pad" class="absolute">
+                    
+                 </div> -->
+                 <div class="grid grid-cols-12 mt-5">
+                    <div class="col-span-1"></div>
+                <div class="col-span-10 bg-blue-500 relative">
+                <textarea class="absolute w-full h-130 bg-[url(/public/images/text-board-zoom-full.png)] px-25 py-15 bg-center bg-contain bg-no-repeat outline-none placeholder:text-center placeholder:text-2xl placeholder:font-semibold placeholder:text-blue-500/70 placeholder:pt-25"
+                    name="textarea" id="textarea" cols="30" rows="10" placeholder="⌨️Type or 🗒️Paste your content here..."></textarea>
+                    <!-- clear btn -->
+                    <button type="button" class="btn bg-gray-400! hover:bg-gray-500! active:bg-gray-700! absolute top-115 right-25" id="clear-btn">clear</button>
+                </div>
+                <div class="col-span-1"></div>
+                </div>
+             </main>
+            <div class="col-span-1"></div>
+         </section>
+         <!-- right -->
+          <section class="col-span-3 bg-blue-500">
+            <div class="w-full flex-col justify-items-center items-center space-y-5 mt-30">
+                   <!-- 1 -->
+                   <div class="card">
+                    <h4>Characters with space</h4>
+                    <p id="ch-count">0</p>    
+                   </div>
+                   <!-- 2 -->
+                    <div class="card">
+                        <h4>Characters without space</h4>
+                        <p id="ch-count-no-space">0</p>
+                    </div>
+            </div>
+          </section>
+    </main>
+    <script type="module" src="./src/js/11_live-character-counter.js"></script>
+</body>
+
+</html>

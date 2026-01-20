@@ -16,7 +16,8 @@ export default defineConfig({
         "7_text-formatter.html",
         "8_show-hide-password.html",
         "9_habit-tracker.html",
-        "10_cart-manager.html"
+        "10_cart-manager.html",
+        "11_live-character-counter.html"
       ],
     },
   },
