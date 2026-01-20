@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 .card{
-    @apply flex justify-between px-10 py-4 bg-gray-100 rounded-2xl my-4 hover:scale-105 transition-all duration-300 cursor-pointer select-none
+    @apply flex justify-between dark:bg-[#303030] px-10 py-4 bg-gray-100 rounded-2xl my-4 hover:scale-105 transition-all duration-300 cursor-pointer select-none
 }
 
 .product-img{
@@ -9,9 +10,13 @@
 }
 
 .product-details{
-   @apply flex-col space-y-2 content-center m-5
+   @apply flex-col space-y-2 content-center m-5 *:last:dark:text-white/60
 }
 
 .count-btn{
-    @apply bg-gray-200 hover:text-blue-500 flex justify-center content-center rounded-full p-1 px-3 text-lg font-semibold;
+    @apply bg-gray-200 dark:bg-[#3a3a3a] hover:text-black/40 active:text-gray-600 dark:hover:text-black flex justify-center content-center rounded-full p-1 px-3 text-lg font-semibold;
+}
+
+.s-total{
+    @apply w-20
 }

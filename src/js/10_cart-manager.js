@@ -5,7 +5,9 @@ const productRateEL = document.getElementsByClassName("product-rate");
 const productCountNumEl = document.getElementsByClassName("count-num");
 const totalAmountEl = document.getElementById("total-amount");
 const subTotalAmountEls = document.getElementsByClassName("single-p-total");
-
+// for toggle
+const toggleCheckEl = document.getElementById("theme-toggle-btn")
+const toggleSpanEl = document.getElementById("toggle-span")
 
 const cardElArr = [...cardEL];
 const countIncBtnArr = [...countIncBtn];
@@ -102,3 +104,18 @@ window.addEventListener("keyup", (event) => {
     }
   }
 });
+
+
+// toggle fn
+toggleCheckEl.addEventListener("click",themeChangeFN)
+
+function themeChangeFN() {
+  // console.dir(toggleCheckEl);
+  if (toggleCheckEl.checked) {
+    document.children[0].classList.add("dark");
+    toggleSpanEl.textContent = "Dark mode"
+  }else{
+    document.children[0].classList.remove("dark");
+    toggleSpanEl.textContent = "Light mode";
+  }
+}

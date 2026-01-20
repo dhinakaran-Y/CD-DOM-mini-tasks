@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8" />
@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="./src/css/shopping-cart.css">
 </head>
 
-<body>
+<body class="dark:bg-[#101010] dark:text-white">
+<!-- toggler -->
+    <div class="fixed top-3 left-4">
+        <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" id="theme-toggle-btn" class="sr-only peer">
+            <div
+                class="relative w-9 h-5 bg-gray-400 dark:bg-gray-800 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-400 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white  after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand">
+            </div>
+            <span class="select-none ms-3 text-sm font-medium text-heading" id="toggle-span">Light mode</span>
+        </label>
+    </div>
+
     <!-- home navigation -->
     <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-brand fixed top-2 right-2" id="nav-list">
-        <a href="./index.html" class="flex justify-center items-center space-x-2 hover:text-gray-500"><svg xmlns="http://www.w3.org/2000/svg"
+        <a href="./index.html" class="flex justify-center items-center space-x-2 text-gray-500 hover:text-black dark:hover:text-white"><svg xmlns="http://www.w3.org/2000/svg"
                 width="15" height="15" viewBox="0 0 24 24" class="mr-1">
                 <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
             </svg>back to home</a>
@@ -47,7 +58,7 @@
                                 <span class="count-num">1</span>
                                 <span class="count-btn count-inc">+</span>
                             </div>
-                            <div class="">
+                            <div class="s-total">
                                 <p class="single-p-total text-green-500">₹ 450.00</p>
                             </div>
                          </div>
@@ -69,7 +80,7 @@
                             <span class="count-num">1</span>
                             <span class="count-btn count-inc">+</span>
                         </div>
-                        <div class="">
+                        <div class="s-total">
                             <p class="single-p-total text-green-500">₹ 1599.00</p>
                         </div>
                     </div>
@@ -91,7 +102,7 @@
                             <span class="count-num">1</span>
                             <span class="count-btn count-inc">+</span>
                         </div>
-                        <div class="">
+                        <div class="s-total">
                             <p class="single-p-total text-green-500">₹ 12399.00</p>
                         </div>
                     </div>
@@ -113,7 +124,7 @@
                             <span class="count-num">1</span>
                             <span class="count-btn count-inc">+</span>
                         </div>
-                        <div class="">
+                        <div class="s-total">
                             <p class="single-p-total text-green-500">₹ 15099.00</p>
                         </div>
                     </div>
@@ -135,7 +146,7 @@
                             <span class="count-num">1</span>
                             <span class="count-btn count-inc">+</span>
                         </div>
-                        <div class="">
+                        <div class="s-total">
                             <p class="single-p-total text-green-500">₹ 600.00</p>
                         </div>
                     </div>
