@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-mini-tasks</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<!-- <link
+    href="https://cdn.jsdelivr.net/combine/npm/daisyui@5/components/indicator.css,npm/daisyui@5/components/collapse.css,npm/daisyui@5/components/dropdown.css"
+    rel="stylesheet" type="text/css" /> -->
+
+<body class="bg-black bg-[url(/images/bg-6.png)] bg-fixed bg-no-repeat bg-center bg-cover">
+
+    <!-- home navigation -->
+    <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-brand fixed top-2 right-2" id="nav-list">
+        <a href="./index.html" class="flex justify-center items-center space-x-2 text-white/70 hover:text-white!"><svg
+                xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" class="mr-1">
+                <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+            </svg>back to home</a>
+    </div>
+
+    <h2 class="text-4xl font-bold text-center text-white mt-20">Accordion Task</h2>
+
+    <main
+        class="bg-white/10 backdrop-blur-xl text-white border border-white/20 shadow-lg w-xl rounded-2xl mx-auto min-h-30 my-10 p-5 flex flex-col *:hover:*:text-brand-2-more-light *:hover:*:last:text-black *:text-xl *:font-semibold *:border *:border-white/10 *:pb-1 *:mb-2 *:last:mb-0 * last:pb-3 *:*:last:text-base *:*:last:*:ml-2 *:*:last:*:w-full">
+        <!-- accordion -->
+        <!-- 1 -->
+        <div class="accordion select-none">
+            <input type="radio" name="my-accordion-2" class="hidden" />
+            <div class="accordion-title day-title">
+                <!-- left -->
+                <div class="flex space-x-2 justify-items-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M22 10H2v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3zM7 8a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1m10 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1"
+                        opacity=".5" />
+                    <path fill="currentColor"
+                        d="M19 4h-1v3a1 1 0 0 1-2 0V4H8v3a1 1 0 0 1-2 0V4H5a3 3 0 0 0-3 3v3h20V7a3 3 0 0 0-3-3" />
+                </svg> <span>How to get child element by ID?</span>
+                </div>
+                <!-- right -->
+                 <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="accordion-arrow-svg"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062" />
+                    </svg>
+                 </div>
+            </div>
+            <div class="accordion-content hidden">
+                To get a child element of a parent element in JavaScript, you can use several DOM (Document Object Model) methods, such
+                as children, childNodes, querySelector(), or getElementById().
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="accordion select-none">
+            <input type="radio" name="my-accordion-2" class="hidden" />
+            <div class="accordion-title day-title">
+                <!-- left -->
+                <div class="flex space-x-2 justify-items-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M22 10H2v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3zM7 8a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1m10 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1"
+                            opacity=".5" />
+                        <path fill="currentColor"
+                            d="M19 4h-1v3a1 1 0 0 1-2 0V4H8v3a1 1 0 0 1-2 0V4H5a3 3 0 0 0-3 3v3h20V7a3 3 0 0 0-3-3" />
+                    </svg> <span>How to use ${} in JS?</span>
+                </div>
+                <!-- right -->
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="accordion-arrow-svg"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062" />
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content hidden">
+                The dollar sign followed by curly braces ${} is used to evaluate and embed expressions dynamically in template literals.
+                const name = 'John Doe'; const age = 20; // Using template literals for string interpolation console. log(`My name is
+                ${name} and I'm ${age} years old.
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="accordion select-none">
+            <input type="radio" name="my-accordion-2" class="hidden" />
+            <div class="accordion-title day-title">
+                <!-- left -->
+                <div class="flex space-x-2 justify-items-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M22 10H2v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3zM7 8a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1m10 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1"
+                            opacity=".5" />
+                        <path fill="currentColor"
+                            d="M19 4h-1v3a1 1 0 0 1-2 0V4H8v3a1 1 0 0 1-2 0V4H5a3 3 0 0 0-3 3v3h20V7a3 3 0 0 0-3-3" />
+                    </svg> <span>How to get child node attribute value in JavaScript?</span>
+                </div>
+                <!-- right -->
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="accordion-arrow-svg"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062" />
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content hidden">
+                Unlike element nodes, attribute nodes have text values. The way to get the value of an attribute, is to get its text
+                value. This can be done using the getAttribute() method or using the nodeValue property of the getAttributeNode()
+                method.
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="accordion select-none">
+            <input type="radio" name="my-accordion-2" class="hidden" />
+            <div class="accordion-title day-title">
+                <!-- left -->
+                <div class="flex space-x-2 justify-items-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M22 10H2v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3zM7 8a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1m10 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1"
+                            opacity=".5" />
+                        <path fill="currentColor"
+                            d="M19 4h-1v3a1 1 0 0 1-2 0V4H8v3a1 1 0 0 1-2 0V4H5a3 3 0 0 0-3 3v3h20V7a3 3 0 0 0-3-3" />
+                    </svg> <span>What is parent and child?</span>
+                </div>
+                <!-- right -->
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="accordion-arrow-svg"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062" />
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content hidden">
+                Parent and child or child and parent usually refers to a parent and child (infant, toddler, youth, adolescent) or
+                family. It may also refer to any abstract concept in which one element (the child) is derived from or associated to
+                another element (the parent):
+            </div>
+        </div>
+        
+    </main>
+
+    <script type="module" src="./src/js/12_accordion.js"></script>
+</body>
+
+</html>

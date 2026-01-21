@@ -33,9 +33,21 @@
 }
 
 .day-title{
-    @apply font-semibold flex *:mr-2 items-center
+    @apply font-semibold flex *:mr-2 items-center justify-items-center
 }
 
 .inner-task-li{
-   @apply flex flex-col px-3 *:border-b *:last:border-none *:border-white/5 *:py-1 *:hover:text-brand-2-light *:hover:*:*:first:text-white *:*:*:first:text-black/70 text-white/50;
+   @apply flex flex-col px-3 *:border-b *:last:border-none *:border-white/5 *:py-1 *:hover:text-brand-2-more-light *:hover:*:*:first:text-white *:*:*:first:text-black/70 text-white/50;
+}
+
+.accordion{
+    @apply rounded-2xl px-3 py-2
+}
+
+.accordion-title{
+    @apply justify-between p-2;
+}
+
+.accordion-content{
+    @apply py-2 pl-6 text-white/60
 }
