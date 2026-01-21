@@ -34,7 +34,7 @@
                  <div class="grid grid-cols-12 mt-5">
                     <div class="col-span-1"></div>
                 <div class="col-span-10 bg-blue-500 relative">
-                <textarea class="absolute w-full h-130 bg-[url(/public/images/text-board-zoom-full.png)] px-25 py-15 bg-center bg-contain bg-no-repeat outline-none placeholder:text-center placeholder:text-2xl placeholder:font-semibold placeholder:text-blue-500/70 placeholder:pt-25"
+                <textarea class="absolute w-full h-130 bg-[url(/public/images/text-board-zoom-full.png)] resize-none px-25 py-15 bg-center bg-contain bg-no-repeat outline-none placeholder:text-center placeholder:text-2xl placeholder:font-semibold placeholder:text-blue-500/70 placeholder:pt-25"
                     name="textarea" id="textarea" cols="30" rows="10" placeholder="⌨️Type or 🗒️Paste your content here..."></textarea>
                     <!-- clear btn -->
                     <button type="button" class="btn bg-gray-400! hover:bg-gray-500! active:bg-gray-700! absolute top-115 right-25" id="clear-btn">clear</button>
@@ -56,6 +56,16 @@
                     <div class="card">
                         <h4>Characters without space</h4>
                         <p id="ch-count-no-space">0</p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card">
+                        <h4>Space</h4>
+                        <p id="count-space">0</p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="card">
+                        <h4>Sentence</h4>
+                        <p id="count-sentence">0</p>
                     </div>
             </div>
           </section>
