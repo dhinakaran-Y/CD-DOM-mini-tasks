@@ -96,6 +96,9 @@ function deleteFn(event) {
   let rowEl = event.target.closest("tr");
   rowEl.remove();
 
+  // alert
+  alert(`${rowEl.children[0].textContent} is removed`)
+
   // total items calculation
   totalItemsCalculation();
 
