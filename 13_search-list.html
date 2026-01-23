@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search List</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="bg-blue-200">
+    <!-- home navigation -->
+    <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-brand fixed top-2 right-2" id="nav-list">
+        <a href="./index.html" class="flex justify-center items-center space-x-2 text-white/70 hover:text-white!"><svg
+                xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" class="mr-1">
+                <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+            </svg>back to home</a>
+    </div>
+    <!-- main -->
+    <main class="w-3xl rounded shadow-2xl mx-auto min-h-30 my-10 p-5 bg-white backdrop-blur-md">
+        <!-- input -->
+         <div class="justify-self-center my-4">
+            <label for="search">Search: </label>
+            <input type="search" class="border border-gray-300 px-3 rounded py-1 w-60 focus:outline-none" id="search" name="search" placeholder="Search language by name">
+        </div>
+        <!-- li -->
+        <ul class="">
+            <h2 class="text-center text-2xl font-semibold mb-3">Languages</h2>
+            <div class="w-full">
+                <p class="text-red-500 my-10 text-center w-full p-10 border rounded hidden" id="no-result-span">No results found.</p>
+                <table
+                    class="border-collapse border border-gray-400 **:border **:border-gray-300 **:px-3 **:py-1 **:text-gray-600 mx-auto w-[90%] text-center"
+                    id="product-list-table">
+                    <thead class="">
+                        <tr class="text-black *:border-b-2">
+                            <th>S.No</th>
+                            <th>Language Name</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-list-tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </ul>
+    </main>
+    <!-- js -->
+    <!-- <script src="./src/js/navLink.js"></script> -->
+    <script type="module" src="/src/js/13_search-list.js"></script>
+</body>
+
+</html>

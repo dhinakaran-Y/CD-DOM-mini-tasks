@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search List</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="bg-blue-200">
+    <!-- home navigation -->
+    <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-brand fixed top-2 right-2" id="nav-list">
+        <a href="./index.html" class="flex justify-center items-center space-x-2 text-white/70 hover:text-white!"><svg
+                xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" class="mr-1">
+                <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+            </svg>back to home</a>
+    </div>
+    <!-- main -->
+    <main class="w-3xl flex flex-col rounded shadow-2xl mx-auto min-h-30 mt-30 p-7 justify-items-center items-center bg-white backdrop-blur-md">
+        <h2 class="my-5 text-2xl font-bold">Random Quote Generator</h2>
+        <div class="w-xl h-50 content-center font-mono text-2xl border border-gray-300 rounded-xl text-gray-400 text-center p-5 relative" id="quote-div">
+            Click below generate button to get some random leaders' Quotes.
+            <!-- <span class="absolute bottom-2 right-3 text-base text-black/90" id="author">Div</span> -->
+        </div>
+        <button type="button" class="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 rounded text-white font-semibold cursor-pointer px-3 py-1 mt-5" id="generate-btn">Generate</button>
+    </main>
+    <!-- js -->
+    <script type="module" src="/src/js/14_random-quote-generator.js"></script>
+</body>
+
+</html>

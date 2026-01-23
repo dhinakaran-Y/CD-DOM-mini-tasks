@@ -18,7 +18,9 @@ export default defineConfig({
         "9_habit-tracker.html",
         "10_cart-manager.html",
         "11_live-character-counter.html",
-        "12_accordion.html"
+        "12_accordion.html",
+        "13_search-list.html",
+        "14_random-quote-generator.html"
       ],
     },
   },
