@@ -5,11 +5,17 @@
     --color-brand-hover: #05b082;
     --color-brand-2:#530343;
     --color-brand-2-light:#670754;
-    --color-brand-2-more-light:#a31387; 
+    --color-brand-2-more-light:#a31387;
+    --color-brand-violate:#8d57cb; 
+    --color-brand-navy-dark:#181e38;
+    --color-brand-navy-dark-2:#30418c;
+    --color-brand-navy-light:#585e80;
+    --color-table-gray:#e8e7ed;
+    --color-table-white:#f9f7fa;
 }
 
 .card {
-    @apply flex justify-between rounded bg-gray-100 px-2 py-1 shadow items-center *:items-center *:last:m-1.5;
+    @apply flex justify-between rounded bg-gray-100 px-2 py-1 shadow items-center *:items-center *:last:m-1.5 bg-[#30418c];
 }
 
 .card-content{

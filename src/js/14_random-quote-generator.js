@@ -31,3 +31,12 @@ function quoteDisplay(quote, author) {
     quoteDiv.append(authorSpanEL)
     
 }
+
+// back navigation
+window.addEventListener("keyup", (event) => {
+  if (event.target.tagName !== "INPUT") {
+    if (event.code === "Backspace") {
+      window.location = "./index.html";
+    }
+  }
+});
