@@ -20,7 +20,8 @@ export default defineConfig({
         "11_live-character-counter.html",
         "12_accordion.html",
         "13_search-list.html",
-        "14_random-quote-generator.html"
+        "14_random-quote-generator.html",
+        "15_calculator-app.html",
       ],
     },
   },
