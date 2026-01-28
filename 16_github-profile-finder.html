@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg" href="/calculator-svgrepo-com.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github profile finder | Dhinakaran-Y</title>
+    <link rel="stylesheet" href="/src/css/16_github-profile-finder.css">
+</head>
+
+<body class="dark:bg-[#0d1117] dark:text-white">
+    <!-- home navigation -->
+    <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-cyan-500! fixed top-2 right-2" id="nav-list">
+        <a href="./index.html" class="flex justify-center items-center space-x-2"><svg
+                xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" class="mr-1">
+                <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+            </svg>back to home</a>
+    </div>
+
+    <!-- search -->
+    <section class="flex-col justify-items-center space-y-4 mt-20">
+        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 25">
+            <path fill="currentColor"
+                d="M12 .568a12 12 0 1 0 0 24a12 12 0 0 0 0-24m3.163 21.783h-.093a.52.52 0 0 1-.382-.14a.52.52 0 0 1-.14-.372v-1.406q.01-.702.01-1.416a3.7 3.7 0 0 0-.151-1.029a1.83 1.83 0 0 0-.542-.874a8 8 0 0 0 2.038-.471a4.05 4.05 0 0 0 1.466-.964a3.84 3.84 0 0 0 .885-1.507a6.8 6.8 0 0 0 .3-2.129a4.1 4.1 0 0 0-.26-1.476a3.9 3.9 0 0 0-.795-1.284q.113-.283.162-.583a3.6 3.6 0 0 0-.04-1.376a5 5 0 0 0-.221-.763a.3.3 0 0 0-.111-.02h-.11a2.3 2.3 0 0 0-.674.11q-.36.106-.703.261a7 7 0 0 0-.661.343q-.322.192-.573.362a9.6 9.6 0 0 0-5.143 0a14 14 0 0 0-.572-.362a6 6 0 0 0-.672-.343a4.5 4.5 0 0 0-.705-.26a2.2 2.2 0 0 0-.662-.112h-.11a.3.3 0 0 0-.11.02a6 6 0 0 0-.23.764a3.8 3.8 0 0 0-.081.773q0 .304.051.603q.05.3.16.583a3.9 3.9 0 0 0-.792 1.284a4.1 4.1 0 0 0-.263 1.476a6.9 6.9 0 0 0 .292 2.119c.181.564.483 1.082.884 1.517c.415.422.915.75 1.466.964c.653.25 1.337.41 2.033.476a1.8 1.8 0 0 0-.452.633a3 3 0 0 0-.2.744a2.75 2.75 0 0 1-1.175.27a1.8 1.8 0 0 1-1.065-.301a2.9 2.9 0 0 1-.752-.823a3 3 0 0 0-.292-.382a2.7 2.7 0 0 0-.372-.343q-.2-.15-.432-.24a1.2 1.2 0 0 0-.481-.101q-.06 0-.12.01a.7.7 0 0 0-.162.02a.4.4 0 0 0-.13.06a.12.12 0 0 0-.06.1a.33.33 0 0 0 .14.242q.14.111.232.171l.03.02q.2.156.382.333q.169.148.3.331q.136.178.231.38q.11.202.231.464c.188.473.522.874.954 1.145c.453.243.961.364 1.476.351q.262 0 .522-.03q.258-.041.515-.091v1.743a.5.5 0 0 1-.533.521h-.062a10.285 10.285 0 1 1 6.324 0z" />
+        </svg>
+        <h2 class="text-3xl font-bold">Find Your GitHub Profiles</h2>
+        <div class="">
+            <!-- input -->
+            <div class="relative justify-items-center my-5 text-white/50 items-center w-sm pl-2 mx-auto">
+                <input type="search"
+                    class="shadow-lg p-3 pl-15 bg-[#1e2a47]/50 rounded-2xl w-full bg-brand-navy-dark/10 absolute border border-gray-50/50 focus:border-cyan-500 placeholder:text-white/50 focus:outline-none"
+                    id="search" name="search" placeholder="Search by github username">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    class="absolute inset-y-3 inset-x-5 stroke-cyan-500 stroke-[0.6px]" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0s.41-1.08 0-1.49zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
+                </svg>
+                <button type="button"
+                    class="btn absolute top-2.25 right-2 bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700"
+                    id="search-btn">Search</button>
+            </div>
+            <!-- btn -->
+    </section>
+
+    <!-- user info -->
+    <main class="w-full justify-items-center space-y-8 mt-40 mb-20 hidden" id="user-info-div">
+        <!-- profile -->
+        <div class="bg-[#1e2a47]/50 w-3xl relative min-h-50 rounded-3xl grid gap-7 grid-cols-10">
+            <!-- profile -->
+            <div class="col-span-3">
+                <img src="https://github.com/dhinakaran-Y.png" alt="profile" class="m-8 rounded-full" id="profile">
+            </div>
+            <!-- info -->
+            <div class="col-span-7 space-y-2 ml-8 content-center">
+                <!-- name -->
+                <p id="name" class="font-semibold">name</p>
+                <!-- location -->
+                <p class="flex space-x-2 items-center"><svg class="fill-gray-300" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                    <path
+                        d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z">
+                    </path>
+                </svg><span id="location">location</span></p>
+                <!-- blog -->
+                 <p>
+                <a href="#" target="_blank" class="flex space-x-2 items-center text-cyan-500 hover:text-cyan-500 hover:stroke-cyan-500">
+                    <svg aria-hidden="true" class="fill-gray-300" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+                        class="octicon octicon-link">
+                        <path
+                            d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                        </path>
+                    </svg><span id="blog">blog</span></a></p>
+                <!-- company -->
+                <p id="company">company</p>
+                <!-- bio -->
+                <p id="bio">bio</p>
+            </div>
+            <!-- repo link -->
+            <a href="#" class="absolute top-3 right-8 stroke-cyan-500 hover:stroke-cyan-300 stroke-[0.5px]" title="view-in-github" id="github-link" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <path fill="#78909c"
+                        d="M26 18h-6a2 2 0 0 0-2 2v2h-6a2 2 0 0 1-2-2v-6h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2v6a4 4 0 0 0 4 4h6v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2M6.5 12a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5ZM26 25.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5Z" />
+                </svg>
+            </a>
+
+            <!-- created date -->
+                <p class="absolute bottom-3 text-sm font-mono text-gray-400 right-8" id="joined-time">joined time</p>
+        </div>
+
+        <!-- follow info -->
+        <div class="*:bg-[#1e2a47]/50 w-3xl rounded-3xl grid gap-7 grid-cols-9">
+            <div class="sm-card">
+                <p>Repositories</p>
+                <p id="rep-count">0</p>
+            </div>
+            <div class="sm-card">
+                <p>Followers</p>
+                <p id="follower-count">0</p>
+            </div>
+            <div class="sm-card">
+                <p>Following</p>
+                <p id="following-count">0</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="h-40 w-3xl mx-auto mt-40 border border-red-500 rounded-3xl text-center content-center text-red-500 text-2xl hidden" id="error-div">no-user found
+    </div>
+
+</body>
+<script type="module" src="./src/js/16_github-profile-finder.js"></script>
+
+</html>

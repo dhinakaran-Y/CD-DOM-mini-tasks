@@ -22,6 +22,7 @@ export default defineConfig({
         "13_search-list.html",
         "14_random-quote-generator.html",
         "15_calculator-app.html",
+        "16_github-profile-finder.html",
       ],
     },
   },
