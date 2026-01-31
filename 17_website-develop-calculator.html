@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator | Dhinakaran-Y</title>
+    <link rel="stylesheet" href="./src/css/17_website-develop-calculator.css">
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+    <!-- home navigation -->
+    <div class="*:font-semibold space-x-2  *:px-2 *:py-1 *:hover:text-brand static float-end mr-3" id="nav-list">
+        <a href="./index.html" class="flex justify-center items-center space-x-2 text-black/60 hover:text-blue-500!"><svg
+                xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" class="mr-1">
+                <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+            </svg>back to home</a>
+    </div>
+
+    <!-- head -->
+    <div class="my-5 justify-items-center">
+        <h1 class="text-3xl font-bold text-gray-800">Website Development Calculator</h1>
+        <p class="text-gray-500 mt-1">Select your requirements to estimate project cost.</p>
+    </div>
+    <div class="max-w-7xl mx-auto p-6 grid grid-cols-1 || lg:grid-cols-3 gap-8">
+
+        <!-- left section -->
+        <form class="space-y-8 || lg:col-span-2" method="post" name="website-requirement-form"
+            id="website-requirement-form">
+
+            <!-- website type -->
+            <div class="input-div">
+                <h2 class="input-quzz" for>Website Type :</h2>
+                <div class="grid grid-cols-2 || md:grid-cols-4 gap-4">
+                    <!-- 1 -->
+                    <label class="input-btn-1" for="static-website">
+                        <input type="radio" id="static-website" name="website-type" value="10000"
+                            data-name="Static-website" class="hidden">
+                        Static
+                    </label>
+
+                    <!-- 2 -->
+                    <label for="dynamic-website" class="input-btn-1">
+                        Dynamic
+                        <input type="radio" id="dynamic-website" name="website-type" value="20000"
+                            data-name="Dynamic-website" class="hidden">
+                    </label>
+                    <!-- 3 -->
+                    <label for="e-commerce-website" class="input-btn-1">
+                        E‑commerce
+                        <input type="radio" id="e-commerce-website" name="website-type" value="30000"
+                            data-name="E-commerce-website" class="hidden">
+                    </label>
+                </div>
+            </div>
+
+            <!-- no of pages -->
+            <div class="input-div">
+                <h2 class="input-quzz">Number of Pages :</h2>
+                <div class="flex flex-wrap gap-4">
+                    <!-- 1 -->
+                    <label for="page-4" class="input-btn-2 text-center">
+                        1-4
+                        <input type="radio" id="page-4" name="page" value="0" data-name="below-4-pages" class="hidden">
+                    </label>
+                    <!-- 2 -->
+                    <label for="page-15" class="input-btn-2 text-center">
+                        5-15
+                        <input type="radio" id="page-15" name="page" value="1000" data-name="below-15-pages"
+                            class="hidden">
+                    </label>
+                    <!-- 3 -->
+                    <label for="page-25" class="input-btn-2 text-center">
+                        15-25
+                        <input type="radio" id="page-25" name="page" value="2000" data-name="below-25-pages"
+                            class="hidden">
+                    </label>
+                    <!-- 4 -->
+                    <label for="page-more" class="input-btn-2 text-center">
+                        above 25
+                        <input type="radio" id="page-more" name="page" value="3000" data-name="above-25-pages"
+                            class="hidden">
+                    </label>
+                </div>
+            </div>
+
+            <!-- domain -->
+            <div class="input-div">
+                <h2 class="input-quzz">Do you want custom domain ?</h2>
+                <div class="flex flex-wrap gap-4">
+                    <!-- 1 -->
+                    <label for="domain-yes" class="input-btn-2 text-center">
+                        Yes
+                        <input type="radio" id="domain-yes" name="domain" value="3500" data-name="domain"
+                            class="hidden">
+                    </label>
+
+                    <!-- 2 -->
+                    <label for="domain-no" class="input-btn-2 text-center">
+                        No
+                        <input type="radio" id="domain-no" name="domain" class="hidden">
+                    </label>
+
+                </div>
+            </div>
+
+            <!-- host -->
+            <div class="input-div">
+                <h2 class="input-quzz">Do you want hosting ?</h2>
+                <div class="flex flex-wrap gap-4">
+                    <!-- 1 -->
+                    <label for="host-yes" class="input-btn-2 text-center">
+                        Yes
+                        <input type="radio" id="host-yes" name="host" value="1000" data-name="hosting" class="hidden">
+                    </label>
+
+                    <!-- 2 -->
+                    <label for="host-no" class="input-btn-2 text-center">
+                        No
+                        <input type="radio" id="host-no" name="host" class="hidden">
+                    </label>
+
+                </div>
+            </div>
+
+            <!-- email -->
+            <div class="input-div">
+                <h2 class="input-quzz">Do you want Official Email Id ?</h2>
+                <div class="flex flex-wrap gap-4">
+                    <!-- 1 -->
+                    <label for="email-yes" class="input-btn-2 text-center">
+                        Yes
+                        <input type="radio" id="email-yes" name="email" data-name="emailChecked" class="hidden">
+                    </label>
+
+                    <!-- 2 -->
+                    <label for="email-no" class="input-btn-2 text-center">
+                        No
+                        <input type="radio" id="email-no" name="email" class="hidden">
+                    </label>
+
+                    <!-- no of emails -->
+                    <div class="content-end flex-none w-full ml-2 mt-3" id="no-email-div">
+                        <label for="no-email"
+                            class="mb-2 inline-block text-neutral-700">Email count :</label>
+                        <input type="range"
+                            class="transparent h-1 w-[40%] cursor-pointer accent-blue-600 border-transparent bg-neutral-200"
+                            min="1" max="10" value="1" step="1" data-name="email" id="no-email"/>
+                        <p>email : <span id="email-count"></span> </p>
+
+                        <!-- <input type="range" name="emailNo" id="emailNo" class="w-fit py-2 px-3 border focus:border-blue-600 focus:outline-none rounded" placeholder="Enter no of emails"> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- design -->
+            <div class="input-div">
+                <h2 class="input-quzz">Did you have any UI design ?</h2>
+                <div class="flex flex-wrap gap-4">
+                    <!-- 1 -->
+                    <label for="design-yes" class="input-btn-2 text-center">
+                        Yes
+                        <input type="radio" id="design-yes" name="design" class="hidden">
+                    </label>
+
+                    <!-- 2 -->
+                    <label for="design-no" class="input-btn-2 text-center">
+                        Make me a design
+                        <input type="radio" id="design-no" name="design" value="4000" data-name="design" class="hidden">
+                    </label>
+
+                </div>
+            </div>
+
+            <!-- logo -->
+            <div class="input-div">
+                <h2 class="input-quzz">Do you have any brand Logos for your website ?</h2>
+                <div class="flex flex-wrap gap-4">
+                    <!-- 1 -->
+                    <label for="logo-yes" class="input-btn-2 text-center">
+                        Yes
+                        <input type="radio" id="logo-yes" name="logo" class="hidden">
+                    </label>
+
+                    <!-- 2 -->
+                    <label for="logo-no" class="input-btn-2 text-center">
+                        Make me logo
+                        <input type="radio" id="logo-no" name="logo" value="4000" data-name="logo" class="hidden">
+                    </label>
+
+                </div>
+            </div>
+
+            <!-- img-vid -->
+            <div class="input-div">
+                <h2 class="input-quzz">In your website want to add images/videos/illustration others ?</h2>
+                <div class="flex flex-wrap gap-4 z-10">
+                    <!-- 1 -->
+                    <label for="media-yes" class="input-btn-2 text-center">
+                        Yes
+                        <input type="radio" id="media-yes" name="media" class="hidden">
+                    </label>
+
+                    <!-- 2 -->
+                    <label for="media-no" class="input-btn-2 text-center">
+                        No
+                        <input type="radio" id="media-no" name="media" class="hidden">
+                    </label>
+
+                </div>
+                <!-- have-img -->
+                <div class="input-div mt-5 hidden" id="is-have-media">
+                    <h2 class="input-quzz">Already you have media files img/vid/illust ?</h2>
+                    <div class="flex flex-wrap gap-4">
+                        <!-- 1 -->
+                        <label for="has-media-yes" class="input-btn-2 text-center">
+                            Yes
+                            <input type="radio" id="has-media-yes" name="hasMedia" class="hidden">
+                        </label>
+
+                        <!-- 2 -->
+                        <label for="has-media-no" class="input-btn-2 text-center">
+                            Make it for me
+                            <input type="radio" id="has-media-no" name="hasMedia" class="hidden" value="4000"
+                                data-name="media">
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- features -->
+            <div class="input-div">
+                <h2 class="input-quzz">Extra Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                    <!-- 1 -->
+                    <label for="seo-f" class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="seoF" id="seo-f" value="1500"
+                            data-name="SEO"> SEO Optimization
+                    </label>
+                    <!-- 2 -->
+                    <label for="live-chat" class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="liveChat" id="live-chat" value="5000"
+                            data-name="Tawk">Tawk Live Chat
+                    </label>
+                    <!-- 3 -->
+                    <label for="whatsapp-chat" class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="whatsappChat" id="whatsapp-chat"
+                            value="5000" data-name="Whatsapp">Whatsapp Chat
+                    </label>
+                    <!-- 4 -->
+                    <label for="admin-panel" class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="adminPanel" id="admin-panel" value="3000"
+                            data-name="Admin-panel"> Admin Panel
+                    </label>
+                    <!-- 5 -->
+                    <label for="payment-gateway" class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="paymentGateway" id="payment-gateway"
+                            value="7000" data-name="payment-gateway"> Payment Gateway
+                    </label>
+                    <!-- 6 -->
+                    <label for="sms-support" class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="smsSupport" id="sms-support" value="3000"
+                            data-name="SMS"> SMS Support
+                    </label>
+                    <!-- 7 -->
+                    <label for="content-writing" class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="contentWriting" id="content-writing"
+                            value="3500" data-name="Content-write"> Content Writing
+                    </label>
+                    <!-- 8 -->
+                    <label for="wishlist" class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="ai" id="ai" value="18000" data-name="AI">
+                        AI chatbot/image generator
+                    </label>
+                    <!-- 9 -->
+                    <label for="d-ui" class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="dUi" id="d-ui" value="19000"
+                            data-name="Dynamic-UI"><span class="flex flex-col justify-items-center"><span
+                                class="ml-0.5">Personalized Content</span> <span>(Dynamic UI based on
+                                users)</span></span>
+                    </label>
+                    <!-- 10 -->
+                    <label for="r-ui" class="flex items-center justify-items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600" name="rUi" id="r-ui" value="15000"
+                            data-name="Role-base-UI"><span class="flex flex-col justify-items-center"><span
+                                class="ml-0.5">Role-based UI</span><span>(admin/user/vendor)</span></span>
+                    </label>
+                </div>
+            </div>
+
+        </form>
+
+        <!-- RIGHT SUMMARY PANEL -->
+        <div class="input-div shadow-md! h-fit sticky top-6">
+
+            <h2 class="text-xl font-semibold mb-4">Your Order</h2>
+
+            <p class="text-center text-red-300" id="no-result-alert">no requirements are selected</p>
+
+            <ul class="space-y-3 text-gray-600 text-sm" id="output-list">
+                <!-- <li class="flex justify-between">
+                    <span>Website Type</span>
+                    <span class="font-medium text-gray-800">Corporate</span>
+                </li>
+                <li class="flex justify-between">
+                    <span>Pages</span>
+                    <span class="font-medium text-gray-800">5–8</span>
+                </li>
+                <li class="flex justify-between">
+                    <span>SEO</span>
+                    <span>₹5,000</span>
+                </li>
+                <li class="flex justify-between">
+                    <span>Live Chat</span>
+                    <span>₹2,000</span>
+                </li> -->
+            </ul>
+
+            <div class="border-t mt-4 pt-4 flex justify-between text-lg font-bold">
+                <span>Total Cost Estimation</span>
+                <span class="text-blue-600" id="total">₹0</span>
+            </div>
+
+            <!-- <button class="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium">
+                Proceed to Payment
+            </button>
+
+            <button class="w-full mt-3 border border-gray-300 py-3 rounded-lg text-gray-700">
+                Download Quotation
+            </button> -->
+
+        </div>
+    </div>
+
+    <!-- js -->
+    <script type="module" src="/src/js/17_website-develop-calculator.js"></script>
+
+</body>
+
+</html>

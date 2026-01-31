@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.m-gap{
+    @apply w-[4%]
+}
+
+.m-content{
+    @apply w-[92%]
+}
+
+.input-div{
+    @apply bg-white p-6 rounded-xl shadow-sm;
+}
+
+.input-quzz{
+    @apply text-lg font-semibold mb-4;
+}
+
+.input-btn-1{
+    @apply border has-checked:bg-blue-400 has-checked:text-white border-gray-300 rounded-lg py-3 hover:bg-blue-50 hover:border-blue-500 text-center;
+}
+
+.input-btn-2{
+    @apply px-4 py-2 border border-gray-300 rounded-lg hover:bg-blue-50 content-center has-checked:bg-blue-400 has-checked:text-white;
+}
