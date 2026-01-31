@@ -5,6 +5,7 @@ const mediaYesEL = document.getElementById("media-yes");
 const isHaveMediaEl = document.getElementById("is-have-media");
 const emailYesEL = document.getElementById("email-yes");
 const noResultAlertEl = document.getElementById("no-result-alert");
+const restBtnEl = document.getElementById("reset-btn");
 // const emailCountDiv = document.getElementById("no-email-div");
 let checkedValArr = [];
 
@@ -71,7 +72,7 @@ function totalCalFn() {
   );
   let totalAmount = amountListArr.reduce((acc, curr) => acc + curr, 0);
 
-  totalEl.textContent = totalAmount;
+  totalEl.textContent = `₹${totalAmount}`;
 }
 
 // email disable fn
@@ -116,6 +117,14 @@ function noResultAlertFn() {
     noResultAlertEl.classList.remove("hidden");
   }
 }
+
+// reset fn
+  restBtnEl.addEventListener("click",(e) => {
+    checkedValArr = [];
+    outputListEl.innerHTML = "";
+    totalCalFn();
+    noResultAlertFn();
+  })
 
 // back navigation
 window.addEventListener("keyup", (event) => {
