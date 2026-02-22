@@ -50,3 +50,36 @@ Logic:
 - The task have min 5 buttons in different colors, Onclick does the background color changing function.
 - And also have a random color change button to change the background color randomly. 
 ---
+
+ ### Task 7: Text Formatter
+    
+Logic:
+- Create a textarea. Add buttons for "Uppercase", "Lowercase", and "Clear Text".
+---
+
+ ### Task 8: Show/Hide Password
+    
+Logic:
+- Create a password input field with an eye icon or checkbox. Toggling the checkbox should change the input type between password and text.
+---
+
+ ### Task 9: Habit Tracker
+    
+Features:
+- In habit tracker application you can create, add, delete habit.
+- You can update the value of habit is done & not yet.
+- The habits count, not done habit count, finished percentage of daily habits are all monitored. 
+---
+
+ ### Task 10: Simple Cart Counter (with Limits) & dark mode toggle function
+    
+logic:
+- Build a cart counter with Increment, Decrement, and Reset buttons. Ensure the counter doesn't go below 0 and changes color (Red for 0, Green for >0).
+- Build a toggle switch that adds/removes a .dark-theme class to the body. Use Tailwind CSS classes for the dark styling.
+---
+
+ ### Task 11: Live Character Counter
+    
+logic:
+- A textarea for "Feedback" (max 200 chars). As the user types, show a live count: "140/200 characters remaining".
+---

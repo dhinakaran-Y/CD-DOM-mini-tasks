@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-<body class="bg-gray-200 bg-[url(/public/images/3.jpg)] bg-fixed bg-no-repeat bg-center bg-cover">
+<body class="bg-gray-200 text-white bg-[url(/public/images/bg-6.png)] bg-fixed bg-no-repeat bg-center bg-cover">
     <header class="w-full bg-white/50 backdrop-blur-md h-10 content-center shadow shadow-black/20">
         <nav class="w-[90vw] mx-auto flex justify-between">
             <!-- left -->
@@ -23,20 +23,20 @@
             </div>
         </nav>
     </header>
-    <main class="w-lg bg-white/30 backdrop-blur-md rounded shadow-2xl mx-auto min-h-30 my-10 p-5 space-y-2">
+    <main class="w-lg bg-white/10 backdrop-blur-md rounded shadow-2xl mx-auto min-h-30 my-10 p-5 space-y-2">
         <h2 class="font-bold my-3 text-center text-2xl">Dynamic User Manager</h2>
         <form action="" id="user-form" class="space-y-2 justify-self-center">
             <div class="">
                 <label for="user-name">Name:</label><br>
                 <input type="text" placeholder="Enter your name"
-                    class="bg-gray-200 border border-gray-400 rounded focus:outline-none px-2 w-md" id="user-name">
+                    class="border border-gray-400 rounded focus:outline-none px-2 w-md" id="user-name">
                 <p class="error-el text-xs text-red-500 hidden">Name contains invalid characters...</p>
             </div>
             <div class="">
                 <label for="job-title">Job role:</label><br>
                 <!-- <input type="text" placeholder="Job title" class="bg-gray-200 border border-gray-400 rounded focus:outline-none px-2" id="job-title"> -->
                 <select name="job-role" id="job-role"
-                    class="bg-gray-200 border border-gray-400 rounded focus:outline-none px-2 text-gray-600 w-md">
+                    class="border border-gray-400 rounded focus:outline-none px-2 text-gray-600 w-md">
                     <option value="Developer">Developer</option>
                     <option value="Designer">Designer</option>
                     <option value="QA & Test Engineer">QA & Test Engineer</option>

@@ -9,6 +9,8 @@ const restBtnEl = document.getElementById("reset-btn");
 // const emailCountDiv = document.getElementById("no-email-div");
 let checkedValArr = [];
 
+// bug in email no btn click it closes but the inner div value is not reset.
+
 // email
 // email count update
 const emailRangInputEl = document.getElementById("no-email");
@@ -83,6 +85,8 @@ function emailCountDisableFn() {
     checkedValArr.splice(featIndex, 1);
   } else {
     emailRangInputEl.disabled = false;
+    // ????
+    // bug in email no btn click it closes but the inner div value is not reset.
   }
 }
 

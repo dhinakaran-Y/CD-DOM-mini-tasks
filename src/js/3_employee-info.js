@@ -74,22 +74,22 @@ function cardColorChange(role, card) {
   // console.log(role , card);
   switch (role) {
     case "Developer":
-      card.classList.add("bg-green-200!");
+      card.classList.add("bg-green-500!");
       break;
     case "Designer":
-      card.classList.add("bg-violet-200!");
+      card.classList.add("bg-violet-500!");
       break;
     case "QA & Test Engineer":
-      card.classList.add("bg-purple-200!");
+      card.classList.add("bg-purple-500!");
       break;
     case "DevOps Engineer":
-      card.classList.add("bg-blue-200!");
+      card.classList.add("bg-blue-500!");
       break;
     case "Security Engineer":
-      card.classList.add("bg-red-200!");
+      card.classList.add("bg-red-500!");
       break;
     case "Sales Engineer":
-      card.classList.add("bg-lime-200!");
+      card.classList.add("bg-lime-500!");
       break;
     default:
       // card.classList.add("bg-gray-100!")

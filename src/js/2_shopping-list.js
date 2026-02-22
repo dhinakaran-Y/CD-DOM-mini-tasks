@@ -10,7 +10,7 @@ function addProducts(data) {
   productListArray.forEach((product) => {
     // console.log(product);
     const trEL = document.createElement("tr");
-    trEL.classList.add("list-row");
+    trEL.classList.add("list-row","*:text-white/70!");
     const productIdEL = document.createElement("td");
     productIdEL.innerText = `${product.id}`;
     const productNameEL = document.createElement("td");

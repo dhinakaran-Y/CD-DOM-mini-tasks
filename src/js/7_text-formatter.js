@@ -6,7 +6,6 @@ const boldBtn = document.getElementById("bold-btn")
 const clearBtn = document.getElementById("clear-btn")
 
 
-
 textAreaEl.addEventListener("input", textFormateFn)
 textAreaEl.addEventListener("input", outputDivVisibleFn)
 upperCaseBtn.addEventListener("click",changeToUpperCase)
